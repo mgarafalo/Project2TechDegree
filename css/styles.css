@@ -1,0 +1,293 @@
+/** Base Layout Styles **/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+}
+
+ul {
+    display: inline-block;
+    padding:0;
+    width:80%;
+    list-style-type: none;
+}
+
+li a {
+    padding: 10px 0;
+    display: block;  
+    margin-top: 10px;
+    background: white; 
+    border-radius: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/** Classes **/
+
+.name {
+    background: none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+.main-content{
+    background-color: #e9c46a;
+    font-family: "Exo 2", sans-serif;
+}
+
+.container {
+    
+    margin-bottom: 10px;
+}
+
+.heading,
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: #2a9d8f;
+    padding: 20px 0;
+    font-family: "Kalam", sans-serif;
+}
+
+.bio-img {
+    margin-top: 30px;
+    width: 65%;
+}
+
+.bio {
+    padding: 20px 0 30px 0;
+    width: 80%;
+    margin: auto;
+}
+.contact {
+    width: 80%;
+    margin: auto;
+}
+
+.col {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.col-img,
+.content-heading {
+    width: 80%;
+    margin:auto;
+    text-align: center;
+}
+
+.content-heading {
+    padding: 50px 0;
+}
+
+.col-content {
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+
+.skills {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.return {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.footer-name {
+    float:left; 
+    margin-top: 0;
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+.heading-return {
+    background: none;
+    float: right;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .col {
+        width: 80%;
+        margin:auto;
+    }
+
+    .first-col,
+    .third-col,
+    .fifth-col {
+        float: left;
+        width: 45%;
+       /** padding-left: 30px; **/
+       
+    }
+
+    .second-col,
+    .fourth-col,
+    .sixth-col {
+        float:right;
+        width: 45%;
+        /** padding-right: 30px; **/
+        
+    }
+
+    .first-col,
+    .second-col,
+    .third-col,
+    .fourth-col {
+        padding-bottom: 20px;
+    }
+
+}
+
+
+
+/** Media Queries **/
+
+
+@media (min-width: 1024px) {
+
+    nav {
+        margin:0;
+    }
+
+    .link-list {
+        width:40%;
+        float:right;
+    }
+
+   ul {
+       margin-top: 5px;
+   } 
+
+   li a {
+       display: inline;
+       float: left;
+       background: none;
+       padding-right: 25px;
+   }
+
+   .name {
+      float:left;
+      margin:20px 0 0 10%;
+      display: inline;
+   }
+
+   .main-nav {
+       width: 100%;
+   }
+
+    .main-heading {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding-bottom: 50px;
+    }
+
+    .bio {
+        float:left;
+        width: 40%;
+        margin-top: 10%;
+    }
+
+    .bio-img {
+        float: right;
+        width: 40%;
+        margin-left: 125px;
+    }
+
+    .col {
+        text-align: center;
+        width:80%;
+    }
+
+    .first-col,
+    .fourth-col {
+        float: left;
+        width: 33%;
+        border: 1px solid red;
+    }
+
+    .second-col,
+    .fifth-col {
+        float: left;
+        width: 33%;
+        border: 1px solid red;
+    }
+
+    .third-col,
+    .sixth-col {
+        float: left;
+        width: 33%;
+        border: 1px solid red;
+    }
+
+    /**
+    .first-col,
+    .second-col,
+    .third-col,
+    .fourth-col,
+    .fifth-col,
+    .sixth-col {
+        float: left;
+        width: 25%;
+    }
+    **/
+    
+    .fourth-col,
+    .fifth-col,
+    .sixth-col {
+        margin-bottom: 50px;
+    }
+
+    /**
+    .first-col,
+    .second-col,
+    .fourth-col,
+    .fifth-col {
+        padding-right: 5px;
+    }
+    **/
+
+    .skills {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    .return {
+        width: 60%;
+    }
+}
+
+
+/** Clearfix **/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
