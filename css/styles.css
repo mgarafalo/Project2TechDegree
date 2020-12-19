@@ -1,4 +1,5 @@
 /** Base Layout Styles **/
+
 * {
     box-sizing: border-box;
 }
@@ -16,7 +17,7 @@ ul {
     list-style-type: none;
 }
 
-li a {
+ li a {
     padding: 10px 0;
     display: block;  
     margin-top: 10px;
@@ -114,7 +115,7 @@ a:visited {
 .footer-name {
     float:left; 
     margin-top: 0;
-    margin-left: 10px;
+    margin-bottom: 0;
     font-size: 1em;
 }
 
@@ -124,8 +125,60 @@ a:visited {
     margin-right: 10px;
 }
 
+.bot-link-list {
+    display: none;
+    visibility: hidden;
+}
+
+/** Media Queries **/
+
 @media (min-width: 768px) {
 
+    nav {
+        margin:0;
+        width: 100%;
+    }
+
+   ul {
+       width: 100%;
+   } 
+
+   li a {
+       float:left;
+       display: block;
+       background: none;
+       padding:0;
+       margin: 5%;
+   }
+
+   .name {
+      margin-bottom: 5px;
+   }
+
+   .main-nav {
+       width: 50%;  
+       margin: auto;
+   }
+
+    .main-heading {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding-bottom: 50px;
+    }
+
+    .bio {
+        float:left;
+        width: 50%;
+        
+    }
+
+    .bio-img {
+        float: right;
+        width: 40%;
+        margin-left: 50px;
+    }
+    
     .container {
         width: 100%;
     }
@@ -139,9 +192,7 @@ a:visited {
     .third-col,
     .fifth-col {
         float: left;
-        width: 45%;
-       /** padding-left: 30px; **/
-       
+        width: 45%;       
     }
 
     .second-col,
@@ -149,8 +200,6 @@ a:visited {
     .sixth-col {
         float:right;
         width: 45%;
-        /** padding-right: 30px; **/
-        
     }
 
     .first-col,
@@ -160,6 +209,31 @@ a:visited {
         padding-bottom: 20px;
     }
 
+    .heading-return {
+        display: none;
+    }
+
+    .bot-nav {
+        width: 100%;
+    }
+
+    .bot-link-list {
+        display: inline;
+        visibility: visible;
+        width: 100%;
+    }
+
+    .bot-ul {
+        width: 40%;
+        float: right;
+        margin:0;
+    }
+
+    .bot-ul li a {
+        margin: auto;
+        padding-right: 10px;
+    }
+    
 }
 
 
@@ -169,11 +243,15 @@ a:visited {
 
 @media (min-width: 1024px) {
 
+    ul {
+        width: 80%;
+    }
+    
     nav {
         margin:0;
     }
 
-    .link-list {
+    .top-link-list {
         width:40%;
         float:right;
     }
@@ -187,15 +265,19 @@ a:visited {
        float: left;
        background: none;
        padding-right: 25px;
+       margin: 20px 0 0 0;
+       font-size: 20px;
    }
 
-   .name {
+   .name,
+   .footer-name {
       float:left;
-      margin:20px 0 0 10%;
-      display: inline;
+      margin:20px 20%;
+
    }
 
-   .main-nav {
+   .main-nav,
+   .bot-nav {
        width: 100%;
    }
 
@@ -227,34 +309,19 @@ a:visited {
     .fourth-col {
         float: left;
         width: 33%;
-        border: 1px solid red;
     }
 
     .second-col,
     .fifth-col {
         float: left;
         width: 33%;
-        border: 1px solid red;
     }
 
     .third-col,
     .sixth-col {
         float: left;
         width: 33%;
-        border: 1px solid red;
     }
-
-    /**
-    .first-col,
-    .second-col,
-    .third-col,
-    .fourth-col,
-    .fifth-col,
-    .sixth-col {
-        float: left;
-        width: 25%;
-    }
-    **/
     
     .fourth-col,
     .fifth-col,
@@ -262,23 +329,30 @@ a:visited {
         margin-bottom: 50px;
     }
 
-    /**
-    .first-col,
-    .second-col,
-    .fourth-col,
-    .fifth-col {
-        padding-right: 5px;
-    }
-    **/
-
     .skills {
         display: block;
         text-align: center;
         margin: auto;
     }
 
-    .return {
-        width: 60%;
+    .footer-name {
+        margin-top: 0;
+    }
+
+    .bot-link-list {
+        width:30%;
+        float:right;
+        margin-right: 5%;
+    }
+
+    .bot-ul {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .bot-ul li a {
+        margin-top: 0;
+        padding-right: 25px;
     }
 }
 
